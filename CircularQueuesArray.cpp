@@ -100,3 +100,40 @@ void cari_makanan() {
     }
 }
 
+void hapus_tertentu() {
+    if (head == NULL) {
+        cout << "Data Kosong" << endl;
+        return;
+    }
+    
+    string hapus;
+    cout << "Masukkan nama makanan yang ingin dihapus: ";
+    cin >> hapus;
+    
+    Node* bantu = head;
+    Node* hapus_node = NULL;
+    
+    // Jika data yang dihapus ada di head
+    if (head->data.nama_makanan == hapus) {
+        hapus_node = head;
+        head = head->next;
+        delete hapus_node;
+        cout << "Data berhasil dihapus" << endl;
+        return;
+    }
+    
+    // Jika data yang dihapus bukan di head
+    while (bantu->next != NULL) {
+        if (bantu->next->data.nama_makanan == hapus) {
+            hapus_node = bantu->next;
+            bantu->next = bantu->next->next;
+            delete hapus_node;
+            cout << "Data berhasil dihapus" << endl;
+            return;
+        }
+        bantu = bantu->next;
+    }
+    
+    cout << "Data tidak ditemukan" << endl;
+}
+
