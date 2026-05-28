@@ -154,4 +154,7 @@ int main() {
             case 1:
                 tambah_awal();
                 break;
+            case 2:
+                cetak_semua();
+                break;
             
