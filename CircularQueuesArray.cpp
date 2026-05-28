@@ -49,3 +49,23 @@ void tambah_awal() {
     baru->next = head;
     head = baru;
 }
+
+void cetak_semua() {
+    // Mengecek apakah data kosong
+    if (head == NULL) {
+        cout << "Data Kosong" << endl;
+        return;
+    }
+    
+    // Menampilkan semua data jika data tidak kosong atau isi dari pointer head != NULL
+    Node* bantu = head;
+    while (bantu != NULL) {
+        cout << "================================" << endl;
+        cout << "Nama Makanan: " << bantu->data.nama_makanan << endl;
+        cout << "Harga: " << bantu->data.harga_makanan << endl;
+        cout << "Kategori: " << bantu->data.kategori << endl;
+        bantu = bantu->next;
+    }
+    cout << "================================" << endl;
+}
+
