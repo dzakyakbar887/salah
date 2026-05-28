@@ -137,3 +137,17 @@ void hapus_tertentu() {
     cout << "Data tidak ditemukan" << endl;
 }
 
+int main() {
+    int pilihan;
+    
+    while (true) {
+        cout << "Menu Utama:" << endl;
+        cout << "1. Tambah Data Makanan Di awal" << endl;
+        cout << "2. Tampilkan Semua Data Makanan" << endl;
+        cout << "3. Cari Data Makanan Berdasarkan Nama" << endl;
+        cout << "4. Hapus Data Makanan Tertentu" << endl;
+        cout << "5. Keluar Dari Aplikasi" << endl;
+        cout << "Pilihan Anda: ";
+        cin >> pilihan;
+        
+        
