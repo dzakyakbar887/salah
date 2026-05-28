@@ -8,3 +8,8 @@ struct Menu {
     int harga_makanan;
     string kategori;
 };
+
+struct Node {
+    Menu data;
+    Node* next;
+};
