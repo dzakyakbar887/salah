@@ -163,4 +163,7 @@ int main() {
             case 4:
                 hapus_tertentu();
                 break;
+            case 5:
+                cout << "Terima kasih!" << endl;
+                return 0;
             
