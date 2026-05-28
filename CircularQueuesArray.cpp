@@ -160,4 +160,7 @@ int main() {
             case 3:
                 cari_makanan();
                 break;
+            case 4:
+                hapus_tertentu();
+                break;
             
