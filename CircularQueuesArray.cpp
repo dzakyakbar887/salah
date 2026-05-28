@@ -69,3 +69,34 @@ void cetak_semua() {
     cout << "================================" << endl;
 }
 
+void cari_makanan() {
+    // Mengecek apakah data kosong
+    if (head == NULL) {
+        cout << "Data Kosong" << endl;
+        return;
+    }
+    
+    string cari;
+    cout << "Masukkan nama makanan yang dicari: ";
+    cin >> cari;
+    
+    // Menampilkan data yang dicari jika data tidak kosong
+    Node* bantu = head;
+    bool ditemukan = false;
+    
+    while (bantu != NULL) {
+        if (bantu->data.nama_makanan == cari) {
+            cout << "================================" << endl;
+            cout << "Nama Makanan: " << bantu->data.nama_makanan << endl;
+            cout << "Harga: " << bantu->data.harga_makanan << endl;
+            cout << "Kategori: " << bantu->data.kategori << endl;
+            ditemukan = true;
+        }
+        bantu = bantu->next;
+    }
+    
+    if (!ditemukan) {
+        cout << "Data tidak ditemukan" << endl;
+    }
+}
+
