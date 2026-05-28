@@ -150,4 +150,8 @@ int main() {
         cout << "Pilihan Anda: ";
         cin >> pilihan;
         
-        
+        switch (pilihan) {
+            case 1:
+                tambah_awal();
+                break;
+            
