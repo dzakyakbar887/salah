@@ -157,4 +157,7 @@ int main() {
             case 2:
                 cetak_semua();
                 break;
+            case 3:
+                cari_makanan();
+                break;
             
