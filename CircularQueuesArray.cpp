@@ -169,4 +169,9 @@ int main() {
             default:
                 cout << "Pilihan tidak tersedia, coba lagi." << endl;
                 break;
-       
+        }
+        
+        cout << endl;
+    }
+    
+    return 0;
